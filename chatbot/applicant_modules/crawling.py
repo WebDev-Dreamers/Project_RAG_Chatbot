@@ -60,6 +60,6 @@ def crawling():
 
 
 
-# 모듈화 (import 실행 방지)
+# 자체 실행
 if __name__ == "__main__":
     crawling()
