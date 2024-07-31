@@ -1,4 +1,4 @@
-## 지원자들을 위한 Chatbot DB에 도메인 정보를 추가하기 위한 크롤링 및 정규화 파일
+## 지원자를 위한 Applicant-Chatbot DB 도메인 정보를 추가하기 위해, 데이터 크롤링 및 정제 파일
 import re
 import requests
 import pandas as pd
