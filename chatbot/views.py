@@ -2,7 +2,7 @@
 from django.http import JsonResponse
 from chatbot.models import *
 
-# 지원자, 학생들을 위한 RAG Chatbot 모듈
+# 지원자, 수강생들을 위한 RAG Chatbot 모듈
 from chatbot.Applicant_Bot_Functions.applicant_chatbot import new_memory, applicant_chatbot
 from chatbot.Student_Bot_Functions.student_chatbot import new_memory, student_chatbot
 
