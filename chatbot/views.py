@@ -39,13 +39,21 @@ def applicant(request):
         question = request.POST.get('question')
         answer = chatbot(question)
 
-        # 답변을 생성한 출처 데이터 확인하기
-        print(answer['source_documents'])
+        # 출처 데이터를 추출하여 포맷팅
+        source_documents = []
+        for doc in answer['source_documents']:
+            category = doc.metadata.get('category')
+            content = doc.page_content
+            source_documents.append({
+                'category': category,
+                'content': content
+            })
 
-        # Frontend로 전달할 데이터 (질의 / 응답)
+        # Frontend로 전달할 데이터 (질의 / 응답 / 응답 출처)
         context = {
-            'question' : question,
-            'answer' : answer['answer']
+            'question': question,
+            'answer': answer['answer'],
+            'source_documents': source_documents
         }
 
         return JsonResponse(context)
@@ -82,13 +90,21 @@ def student(request):
         question = request.POST.get('question')
         answer = chatbot(question)
 
-        # 답변을 생성한 출처 데이터 확인하기
-        print(answer['source_documents'])
+        # 출처 데이터를 추출하여 포맷팅
+        source_documents = []
+        for doc in answer['source_documents']:
+            category = doc.metadata.get('category')
+            content = doc.page_content
+            source_documents.append({
+                'category': category,
+                'content': content
+            })
 
-        # Frontend로 전달할 데이터 (질의 / 응답)
+        # Frontend로 전달할 데이터 (질의 / 응답 / 응답 출처)
         context = {
-            'question' : question,
-            'answer' : answer['answer']
+            'question': question,
+            'answer': answer['answer'],
+            'source_documents': source_documents
         }
 
-        return JsonResponse(context)
+    return JsonResponse(context)
