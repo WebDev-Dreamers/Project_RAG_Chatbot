@@ -347,7 +347,7 @@ AWS,"Q18. 'An error occurred (SignatureDoesNotMatch) when calling the <operation
 AWS,"Q19. 'An error occurred (InvalidParameterValue) when calling the <operation> operation: Value (<value>) for parameter <parameter-name> is invalid' 오류가 발생합니다. 어떻게 해결하나요? 답변: API 호출에 사용된 매개변수 값이 올바른지 확인하세요. 값이 API 사양에 맞는지 확인하세요."
 AWS,"Q20. 'An error occurred (ResourceNotFoundException) when calling the <operation> operation: Requested resource not found' 오류가 발생합니다. 어떻게 해결하나요? 답변: 요청한 리소스가 존재하지 않습니다. 리소스 식별자가 정확한지 확인하고, 리소스가 삭제되지 않았는지 확인하세요."
 
-Docker,"Q1. 'docker: Error response from daemon: Conflict. The container name "/<container_name>" is already in use by container' 오류가 발생합니다. 어떻게 해결하나요? 답변: 동일한 이름의 컨테이너가 이미 실행 중입니다. 'docker ps -a' 명령어로 컨테이너 목록을 확인하고, 기존 컨테이너를 제거하거나 이름을 변경하세요."
+Docker,"Q1. 'docker: Error response from daemon: Conflict. The container name "/<container_name>" is already in use by container' 오류가 발생합니다. 어떻게 해결하나요? 답변: 동일한 이름의 컨테이너가 이미 실행 중입니다. 'docker ps -a' 명령어로 컨테이너 목록을 확인하고 기존 컨테이너를 제거하거나 이름을 변경하세요."
 Docker,"Q2. 'Error: No such container: <container_id>' 오류가 발생합니다. 어떻게 해결하나요? 답변: 지정한 컨테이너 ID가 올바른지 확인하세요. 'docker ps -a' 명령어로 컨테이너 목록을 확인하고, 올바른 ID를 사용하세요."
 Docker,"Q3. 'Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?' 오류가 발생합니다. 어떻게 해결하나요? 답변: Docker 데몬이 실행 중인지 확인하세요. 'sudo systemctl start docker' 명령어로 Docker 데몬을 시작하세요."
 Docker,"Q4. 'Error response from daemon: pull access denied for <image_name>, repository does not exist or may require 'docker login'' 오류가 발생합니다. 어떻게 해결하나요? 답변: Docker 이미지를 가져올 수 없습니다. 이미지 이름이 올바른지 확인하고, 프라이빗 레지스트리의 경우 'docker login' 명령어로 로그인하세요."
