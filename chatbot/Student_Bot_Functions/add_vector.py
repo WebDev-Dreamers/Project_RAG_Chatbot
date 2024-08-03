@@ -1,4 +1,4 @@
-## 지원자들을 위한 지원자 FAQ 게시판 정보를 저장한 Chroma DB 구성 파일
+## 수강생들을 위한 지원자 FAQ 게시판 정보를 저장한 Chroma DB 구성 파일
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from langchain.schema import Document
